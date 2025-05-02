@@ -1,0 +1,20 @@
+.highlight{
+    background-color: orange;
+}
+.error{
+    background-color: red;
+}
+
+#lo{
+    border: none;
+    width: 300px;
+    text-align: left;
+}
+
+#btn{
+    border-radius: 10px;
+}
+
+#div1{
+    display: flex;
+}

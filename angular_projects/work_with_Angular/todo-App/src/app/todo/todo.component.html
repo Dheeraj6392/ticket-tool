@@ -1,0 +1,26 @@
+<div class="todo-container">
+    <h2>📝 My to-do List</h2>
+
+    <form #toAdd="ngForm" (ngSubmit)="onSubmit(toAdd.value)" class="input-group">
+        <input type="date" ngModel name="date">
+        <input ngModel name="message"  placeholder="Enter a new task...">
+        <button >click</button>
+    </form>
+
+
+    <ul>
+        <li *ngFor="let todo of todos">
+            <span [class.completed]="todo.completed" (click)="toggleTodo(todo.id)">{{todo.title}}</span>
+            <button (click)="deleteTodo(todo.id)">❌</button>
+        </li>
+    </ul>
+</div>
+  
+
+<button [ngclass]="{btn}">
+ click here
+</button>
+
+<!-- <button [ngclass]=btn>
+click here
+</button> -->

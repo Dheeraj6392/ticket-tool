@@ -1,0 +1,39 @@
+<h3 class="name">TuneTrail</h3>
+
+
+<!-- first dropdown start -->
+<div ngbDropdown class="d-inline-block">
+	<button type="button" class="btn btn-outline-primary" id="dropdown1" ngbDropdownToggle>Toggle dropdown</button>
+	<div ngbDropdownMenu aria-labelledby="dropdown1">
+	 <ol>
+    <div id="div1" *ngFor = "let item of albums">
+      <li id="lo">
+        {{item.name}}
+      </li>
+      <button id="btn" (click) = "toSend(item.audio)">Play</button>
+      <button (click)= "toAdd(item)">add to favourite</button>
+      
+    </div>
+	 </ol>
+	</div>
+</div>
+<!-- first dropdown end -->
+
+
+
+<!-- second dropdown start -->
+<div ngbDropdown class="d-inline-block">
+	<button type="button" class="btn btn-outline-primary" id="dropdown1" ngbDropdownToggle>Toggle dropdown</button>
+	<div ngbDropdownMenu aria-labelledby="dropdown1">
+	 <ol>
+    <div id="div1" *ngFor = "let item of album2">
+      <li id="lo">
+        {{item.name}}
+      </li>
+      <button (click)= "toDelete(item.name)">remove to favourite</button>
+      
+    </div>
+	 </ol>
+	</div>
+</div>
+<!-- second dropdown end -->

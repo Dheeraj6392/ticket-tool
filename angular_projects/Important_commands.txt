@@ -1,0 +1,32 @@
+
+
+  for no standalone project                  ------------              ng new <project-name> --no-standalone
+
+
+
+
+    ***********************  command for project name -->> Test *******************
+
+    to download bootstrap dependency    -------------------------     ng add @bootstrap/ng-bootstrap
+
+    angular--fontawesome                -------------------------     ng add @fontawesome/angular-fontawesome# Angular Project Setup Commands
+
+### Create a new Angular project without standalone setup
+```bash
+ng new <project-name> --no-standalone
+```
+
+### Example: Create a new Angular project named "Test"
+```bash
+ng new Test --no-standalone
+```
+
+### Add Bootstrap dependency to an Angular project
+```bash
+ng add @bootstrap/ng-bootstrap
+```
+
+### Add Font Awesome dependency to an Angular project
+```bash
+ng add @fontawesome/angular-fontawesome
+```

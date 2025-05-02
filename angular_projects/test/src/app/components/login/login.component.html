@@ -1,0 +1,1 @@
+<button *ngFor= "let item of items; let i = index" [ngClass]="{'active':selectedIndex === i}" (click)="changeColor(i)">Button {{i + 1}}</button>
